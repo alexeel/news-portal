@@ -1,0 +1,159 @@
+/* Typography */
+
+@import 'colors';
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.no-select {
+  user-select: none;
+}
+
+h1 {
+  color: @dark;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+h2 {
+  color: @dark;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+h3 {
+  color: @dark;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+h4 {
+  color: @dark;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0 1em;
+}
+
+/* Bold */
+b,
+strong {
+  font-weight: 600;
+}
+
+/* Linx */
+a,
+.link {
+  color: @primary;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+
+a:hover,
+.link:hover {
+  color: @black;
+}
+
+.link-dashed {
+  border: dashed currentColor;
+  border-width: 0 0 1px;
+}
+
+.link-dashed:hover {
+  color: @black;
+}
+
+.red {
+  color: @secondary;
+}
+
+.button {
+  display: inline-flex;
+  gap: 0 4px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.28;
+  padding: 8px 16px;
+  min-width: 128px;
+  max-width: 100%;
+  background: @light-light;
+  color: @dark;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: ease-in-out 0.15s;
+  transition-property: color, background-color;
+  text-align: center;
+
+  &:hover {
+    color: @white;
+    background-color: @primary;
+  }
+
+  &:active {
+    color: @white;
+    background-color: @dark;
+  }
+
+  &[disabled] {
+    color: @white;
+    background-color: @black20;
+    cursor: not-allowed;
+
+    &:hover {
+      color: @white;
+      background-color: @black20;
+    }
+  }
+
+  &[data-busy] {
+    background-color: @light-light;
+    color: @dark;
+    cursor: wait;
+
+    &.red {
+      background-color: @secondary-dark;
+      color: white;
+    }
+  }
+}
+
+/* Unordered List */
+
+ul,
+ol {
+  padding-inline-start: 20px;
+
+  ul,
+  ol {
+    margin-block-start: 10px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+}
