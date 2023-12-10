@@ -1,0 +1,141 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "ignorePatterns": ["node_modules/*", "*.js"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/base",
+    "plugin:vue/essential",
+    "@vue/eslint-config-typescript/recommended",
+    "@vue/eslint-config-airbnb"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "globals": {
+    "Models": "readonly"
+  },
+  "rules": {
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "linebreak-style": ["warn", "windows"],
+    "object-curly-spacing": "off",
+    "object-curly-newline": "off",
+    "key-spacing": [
+      "error",
+      {
+        "mode": "minimum",
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "prefer-regex-literals": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-promise-executor-return": "off",
+    "no-empty-pattern": "off",
+    "func-names": "off",
+    "max-classes-per-file": ["error", 5],
+    "no-cond-assign": "off",
+    "no-param-reassign": "off",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "use-isnan": "off",
+    "no-lonely-if": "off",
+    "no-sequences": "off",
+    "no-trailing-spaces": "off",
+    "max-len": ["error", { "code": 120, "ignoreComments": true }],
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "vue/no-v-text-v-html-on-component": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/no-v-for-template-key": "off",
+    "vue/script-indent": [
+      "error",
+      2,
+      {
+        "baseIndent": 0,
+        "switchCase": 1
+      }
+    ],
+
+    "vuejs-accessibility/mouse-events-have-key-events": "off",
+    "vuejs-accessibility/click-events-have-key-events": "off",
+    "vuejs-accessibility/form-control-has-label": "off",
+    "vuejs-accessibility/label-has-for": "off",
+    "vuejs-accessibility/aria-props": "off",
+    "vuejs-accessibility/anchor-has-content": "off",
+    "vuejs-accessibility/tabindex-no-positive": "off",
+    "vuejs-accessibility/aria-role": "off",
+
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "off", // need fix
+    "eol-last": "off",
+    "no-unused-vars": "off",
+    "default-param-last": "off",
+    "quote-props": "error",
+    "no-return-assign": "off",
+    "arrow-body-style": "off",
+    "no-unused-expressions": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-globals": "off",
+    "no-undef-init": "off",
+    "no-extra-boolean-cast": "off",
+    "no-bitwise": "off",
+    "no-multi-assign": "off",
+    "no-continue": "off",
+    "no-alert": "off",
+    "block-spacing": "off",
+    "no-var": "off",
+    "vars-on-top": "off",
+    "no-confusing-arrow": "off",
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "no-restricted-exports": "off",
+    "new-parens": "off",
+    "object-property-newline": "off",
+    "import/newline-after-import": "off",
+
+    "import/extensions": "off", // (deploy issue!)
+    "import/order": "off", // need fix maybe
+    "import/no-unresolved": "off", // need fix maybe (deploy issue!)
+    "import/no-named-as-default": "off",
+    "default-case": "off",
+    "no-buffer-constructor": "off",
+    "yoda": "off",
+    "operator-linebreak": "off",
+    "no-useless-escape": "off",
+    "dot-notation": "off",
+    "consistent-return": "off",
+    "prefer-destructuring": "off",
+    "padded-blocks": "off",
+    "no-nested-ternary": "off",
+    "no-use-before-define": "off",
+    "arrow-parens": "off",
+    "no-debugger": "off",
+    "no-console": "off"
+  }
+}
+
